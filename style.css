@@ -42,8 +42,8 @@ body {
 }
 
 .nav-but:hover {
-    background-color: #0056b3; 
-    box-shadow: 3px 3px 2px #007BFF;
+    background-color: #bd65bdc1; 
+    box-shadow: 3px 3px 2px #a6185fc0;
     transform: translateY(-1px); 
     cursor: pointer;
 }
