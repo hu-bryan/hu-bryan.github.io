@@ -1,50 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HOME PAGE</title>
-<link rel="stylesheet" href="./style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HONGYI BRIAN HU — Home</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<nav class="nav-bar">
-    <a class="nav-but" href="index.html">HOME</a>
-    <a class="nav-but" href="research.html">RESEARCH</a>
-    <a class="nav-but" href="others.html">OTHERS</a>
-</nav>
-<div class="pill bio">
-    <img src="./asset/bio-pic.jpg" alt="A picture of Brian" id="me-pic">
-    <div class="pill intro">
-        <h1 style="margin:0px;">HONGYI BRIAN HU</h1>
+  <header class="site-header">
+    <nav class="nav-bar" aria-label="Main navigation">
+      <a class="nav-but" href="index.html">HOME</a>
+      <a class="nav-but" href="">RESEARCH</a>
+      <a class="nav-but" href="">OTHERS</a>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <section class="card bio">
+      <img src="./asset/bio-pic.jpg" alt="A picture of Brian" id="me-pic" />
+      <div class="content">
+        <h2>HONGYI BRIAN HU</h2>
         <p>
-            brian dot h dot lastname at gmail dot com <br>
-            <a href="https://github.com/hu-bryan" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/brian-hu-a29a9712b/" target="_blank">LinkedIn</a>
-            <a href="asset/hu_phd_application_cv.pdf" target="_blank">CV</a>
+          brian dot h dot hu at gmail dot com  <br>
+          <a href="https://github.com/hu-bryan" target="_blank" rel="noopener">GitHub</a> <br>
+          <a href="https://www.linkedin.com/in/brian-hu-a29a9712b/" target="_blank" rel="noopener">LinkedIn</a> <br>
+          <a href="asset/hu_phd_application_cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
         </p>
+
         <p>
-            Welcome to my webpage! I earned my Bachelor's degree in Mathematical Sciences from Carnegie Mellon University in Spring 2024. I hope to attend graduate school at the University of Pittsburgh in Fall 2025, studying mathematics and machine learning.
+          I am master's student at the University of Pittsburgh 
+          <a href="https://www.isp.pitt.edu/">Intelligent Systems Program</a> 
+          studying ML/AI. My advisor is <a href="https://aminrahimian.github.io/">Amin Rahimian</a>. 
+          Prior to this, I received my bachelor's degree in mathematics from Carnegie Mellon University.     
+          I have worked in various roles, including bank teller, residential director, library clerk.
+          Every sunday I am the host+busser at 
+          <a href="https://www.instagram.com/zenithpgh" target="_blank" rel="noopener">Zenith (vegetarian restaurant)</a>.
         </p>
-        
+
         <p>
-            Currently, I am a bank teller at <a href="https://farmersbankgroup.com/" target="_blank">Farmer's National Bank</a> on weekdays. On Sundays, I am the host+busser at <a href="https://www.instagram.com/zenithpgh" target="_blank">Zenith</a>, the most wonderful vegetarian restaurant.
+          I have been living in Pittsburgh since 2018. My favorite busline is the 54 and
+          my favorite bridge is the hot metal.
+          
         </p>
-        
-        <p>
-            On top of full time employment, I am auditing <a href="asset/IE2117_Syllabus_Spring_2025.pdf" target="_blank">IE 2117 - Foundations of Statistics</a>, taught by <a href="https://aminrahimian.github.io/index.html" target="_blank">Dr. Amin Rahimian</a>. I am also doing research with his mentorship on <a href="https://en.wikipedia.org/wiki/Differentially_private_analysis_of_graphs" target="_blank">differential privacy</a> applied to the <a href="https://en.wikipedia.org/wiki/Vehicle_routing_problem" target="_blank">vehicle routing problem</a>.
-        </p>        
-        <p>
-            Pittsburgh has been my home since 2018 and I love it here! I have been a Southside local since 2022. My favorite bus line is the 54; favorite bridge is the Hot Metal Bridge; favorite attraction is <a href="https://trundlemanor.com/" target="_blank">Trundle Manor</a>.
-        </p>
-    </div>
-</div>
+      </div>
+    </section>
+
+    <section class="card proj-1">
+      <h2>Current Work</h2>
+      <p>
+        I am taking Machine Learning (PhD Level) and Bias & Ethics of AI at pitt
+        and Graduate Algorithms at CMU. Each of my ML and Ethical AI class have
+        a research project component with the expectation of publication at ML/AI 
+        conferences. I am doing my ML project on data distillation using diffusion 
+        generative models and my Ethical AI project on reward hacking during 
+        reinforcement learning with human feedback.   
+      </p>
+      <p>
+        My on-going project with my advisor is on integrating differential privacy into 
+        services that utilize sensitive data, such as locations.
+      </p>
+    </section>
+  </main>
 
 </body>
 </html>

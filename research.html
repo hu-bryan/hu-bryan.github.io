@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RESEARCH</title>
-<link rel="stylesheet" href="./style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HONGYI BRIAN HU — Research</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <a class="skip-link" href="#research-main">Skip to content</a>
 
-<nav class="nav-bar">
-    <a class="nav-but" href="index.html">HOME</a>
-    <a class="nav-but" href="research.html">RESEARCH</a>
-    <a class="nav-but" href="others.html">OTHERS</a>
-</nav>
+  <header class="site-header">
 
-<div class="pill bio">
-    <img src="./asset/angle_research_ye.JPG" alt="Angles" id="me-pic">
-    <div class="pill intro">
-        <h2 style="margin:0px;">Discrete Geometry</h2>
-        <p>
-            <a href="https://arxiv.org/abs/2108.12015" target="_blank">Paper</a>
-        </p>
-        <p>
-            
-        </p>
-    </div>
-</div>
+    <nav class="nav-bar" aria-label="Main navigation">
+      <a class="nav-but" href="index.html">HOME</a>
+      <a class="nav-but" href="research.html">RESEARCH</a>
+      <a class="nav-but" href="others.html">OTHERS</a>
+    </nav>
+  </header>
 
-<div class="pill bio">
-    <img src="./asset/tree_research.JPG" alt="Angles" id="me-pic">
-    <div class="pill intro">
-        <h2 style="margin:0px;">Graph Theory and Computer Science</h2>
-        <p>
-            <a href="asset/Andrew Hu Sum Edge Coloring on Multitree.pdf" target="_blank">Report</a>
-        </p>
-        <p>
-            
-        </p>
-    </div>
-</div>
+  <main id="research-main" class="container">
+    <section class="card">
+      <h2>Overview</h2>
+      <p>
+        My current research interests include differential privacy, vehicle routing problems, and algorithmic applications of statistical methods. Below are project summaries, files and links to code when available.
+      </p>
+    </section>
 
-<div class="pill bio">
-    <img src="./asset/option_research.JPG" alt="Angles" id="me-pic">
-    <div class="pill intro">
-        <h2 style="margin:0px;">Math Finance</h2>
+    <section class="card projects-grid">
+      <article class="project-card">
+        <h3>Differential Privacy for Vehicle Routing</h3>
         <p>
-            <a href="asset/Hu et al Perpetual Bounded Option.pdf" target="_blank">Poster</a>
+          Mentor: Dr. Amin Rahimian. Objective: design analysis methods that preserve privacy of route/customer data while still enabling useful optimization for routing problems (crowd-shipping / last-mile logistics).
+        </p>
+        <p><strong>Status:</strong> ongoing — code and notes available on request.</p>
+        <p class="meta">
+          Tools: Python, R, optimization libraries, DP frameworks
         </p>
         <p>
-            
+          <a href="https://en.wikipedia.org/wiki/Differentially_private_analysis_of_graphs" target="_blank" rel="noopener">Background reading</a>
         </p>
-    </div>
-</div>
+      </article>
+
+      <article class="project-card">
+        <h3>Combining VNS and ML for Crowd-Shipping (implementation)</h3>
+        <p>
+          Implementation & experiments based on the paper: "Combining variable neighborhood search and machine learning to solve the vehicle routing problem with crowd-shipping."
+        </p>
+        <p><strong>Status:</strong> implemented algorithms / running experiments</p>
+        <p class="meta">Repo: <a href="https://github.com/hu-bryan" target="_blank" rel="noopener">GitHub</a></p>
+      </article>
+
+      <article class="project-card">
+        <h3>Statistics & Teaching</h3>
+        <p>
+          Auditing IE 2117 — Foundations of Statistics. Preparing teaching notes and lab examples demonstrating applied statistical tools in Python/R.
+        </p>
+        <p><strong>Materials:</strong> syllabus and sample labs available on request.</p>
+      </article>
+    </section>
+
+  </main>
+
 
 </body>
 </html>
